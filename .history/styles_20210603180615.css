@@ -1,0 +1,195 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+   :root {
+      --color-white: #f3f3f3;
+      --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+      --color-green: #082457;
+  }
+  
+  *,
+  *::before,
+  *::after {
+      box-sizing: border-box;
+  }
+  
+  body {
+      font-family: 'Inconsolata', monospace;
+      font-size: 1rem;
+      font-weight: 1000;
+      line-height: 1.4;
+      color: var(--color-white);
+      margin: 0;
+  }
+  
+  body::before {
+      content: '';
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background: var(--color-green);
+  }
+  
+  header {
+      font-weight: 400;
+      font-size: 3.5rem;
+      margin-top: 0rem;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      color: #e4e4e4;
+      text-align: center;
+  }
+  
+  label {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+  }
+  
+  input,
+  button {
+      margin: 0;
+      font-size: inherit;
+      font-family: inherit;
+      line-height: inherit;
+  }
+  
+  button {
+      border: none;
+  }
+  
+  #container {
+      width: 100%;
+      margin: 3.125rem auto 0 auto;
+  }
+  
+  @media (min-width: 576px) {
+      #container {
+          max-width: 540px;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      #container {
+          max-width: 720px;
+      }
+  }
+  /* 
+  @media (max-width: 400px) {
+       :root {
+          font-size: 7px;
+      }
+  }
+  
+  @media (min-width: 401px) and (max-width: 799px) {
+       :root {
+          font-size: 16px;
+      }
+  }
+  
+  @media (min-width: 800px) {
+       :root {
+          font-size: 24px;
+      }
+  }
+  
+  @media (min-width: 1000px) {
+       :root {
+          font-size: 26px;
+      }
+  }
+   */
+  
+  #newBookButton {
+      position: relative;
+      left: 20%;
+      top: -2rem;
+      left: -4.5rem;
+  }
+  
+  form {
+      background: var(--color-darkblue-alpha);
+      padding: 2.5rem 6.25rem;
+  }
+  
+  h3 {
+      position: relative;
+      margin-left: 0;
+      top: -1rem;
+      color: rgb(18, 156, 236);
+  }
+  
+  #author {
+      position: relative;
+      margin-bottom: 0.2rem;
+      top: -1.5rem;
+      left: -0.3rem;
+      max-width: fit-content;
+  }
+  
+  #title,
+  #pages {
+      position: relative;
+      margin-bottom: 0.2rem;
+      max-width: auto;
+      top: -1.5rem;
+  }
+  
+  #url {
+      position: relative;
+      margin-bottom: 0.2rem;
+      left: 0.8rem;
+      max-width: auto;
+      top: -1.5rem;
+  }
+  
+  #read {
+      position: relative;
+      margin-bottom: 0.2rem;
+      right: 5.0rem;
+      top: -1.5rem;
+      margin-bottom: -1rem;
+  }
+  
+  #authorInput {
+      position: relative;
+      right: -0.70rem;
+      max-width: 58.0%;
+  }
+  
+  #titleInput,
+  #pagesInput {
+      position: relative;
+      right: -0.7rem;
+      max-width: 60%;
+  }
+  
+  #urlInput {
+      position: relative;
+      right: -0.7rem;
+      max-width: 65.5%;
+  }
+  
+  #readInput {
+      position: relative;
+      right: -0.5rem;
+      margin-bottom: 0.4rem;
+  }
+  
+  .checkMark {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      left: -0.5rem;
+      height: 0.9rem;
+      width: 0.9rem;
+      border-color: black;
+      border-style: solid;
+      border-width: 0.01rem;
+      color: rgb(241, 232, 237);
+      background: rgb(241, 232, 237);
+  }
+  
+  #readInput:checked~.checkMark {
+      color: rgb(26, 28, 43);
+      background: rgb(235, 225, 230);
+  }

@@ -1,0 +1,11 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+ :root {
+     font-size: 3.5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgba(0, 0, 0, 0.849);
+     color: aqua;
+ }
+ 
+ body {}

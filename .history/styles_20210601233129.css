@@ -1,0 +1,43 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+   :root {
+      font-size: 4vh;
+      background: rgba(0, 0, 0, 0.849);
+      color: rgb(255, 0, 191);
+      font-family: 'Inconsolata', monospace;
+  }
+  
+  body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  h1 {
+      color: tomato;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #authorInput {
+      position: relative;
+      left: 1rem;
+      margin-bottom: 1rem;
+  }
+  
+  #titleInput,
+  #pagesInput {
+      position: relative;
+      left: 1.5rem;
+      margin-bottom: 1rem;
+  }
+  
+  #readInput {
+      position: relative;
+      left: 2rem;
+      margin-bottom: 1rem;
+      border: white;
+  }

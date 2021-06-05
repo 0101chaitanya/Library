@@ -1,0 +1,9 @@
+:root {
+    font-size: 3.5vh;
+    background: linear-gradient(35, rgb(75, 75, 168), rgb(209, 191, 191));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {}

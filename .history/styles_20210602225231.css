@@ -1,0 +1,143 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+   :root {
+      background: rgba(136, 221, 221, 0.849);
+      color: rgb(235, 42, 8);
+      font-family: 'Inconsolata', monospace;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+  }
+  
+  @media (max-width: 400px) {
+       :root {
+          font-size: 7px;
+      }
+  }
+  
+  @media (min-width: 401px) and (max-width: 799px) {
+       :root {
+          font-size: 16px;
+      }
+  }
+  
+  @media (min-width: 800px) {
+       :root {
+          font-size: 24px;
+      }
+  }
+  
+  @media (min-width: 1000px) {
+       :root {
+          font-size: 28px;
+      }
+  }
+  
+  h1 {
+      color: tomato;
+      text-align: center;
+  }
+  
+  #newBookButton {
+      position: relative;
+      left: 20%;
+      top: -1rem;
+  }
+  
+  h3 {
+      position: relative;
+      margin-left: 0;
+      color: rgb(18, 156, 236);
+  }
+  
+  form {
+      font-size: 1.5rem;
+      text-align: center;
+      display: inline-flex;
+      border: 0.01rem solid;
+      position: relative;
+      width: auto;
+      right: 5rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+  
+  #author {
+      position: relative;
+      margin-bottom: 0.1rem;
+      left: -0.3rem;
+      max-width: auto;
+      border: 0.01rem solid;
+  }
+  
+  #title,
+  #pages {
+      position: relative;
+      margin-bottom: 0.1rem;
+      max-width: auto;
+      border: 0.01rem solid;
+  }
+  
+  #url {
+      position: relative;
+      margin-bottom: 0.1rem;
+      left: 0.8rem;
+      max-width: auto;
+      border: 0.01rem solid;
+  }
+  
+  #read {
+      position: relative;
+      margin-bottom: 0.4rem;
+      right: 5.0rem;
+  }
+  
+  #authorInput {
+      position: relative;
+      right: -0.70rem;
+      max-width: 58.0%;
+  }
+  
+  #titleInput,
+  #pagesInput {
+      position: relative;
+      right: -0.7rem;
+      max-width: 60%;
+  }
+  
+  #urlInput {
+      position: relative;
+      right: -0.6rem;
+      max-width: 65%;
+  }
+  
+  #readInput {
+      position: relative;
+      right: -0.5rem;
+      margin-bottom: 0.4rem;
+  }
+  
+  .checkMark {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      left: -0.5rem;
+      height: 0.9rem;
+      width: 0.9rem;
+      border-color: black;
+      border-style: solid;
+      border-width: 0.01rem;
+      color: rgb(241, 232, 237);
+      background: rgb(241, 232, 237);
+  }
+  
+  #readInput:checked~.checkMark {
+      color: rgb(26, 28, 43);
+      background: rgb(235, 225, 230);
+  }
